@@ -1,0 +1,12 @@
+/* 面包屑动画 */
+@keyframes flyIn{
+    from{
+        transform: translateX(25px);
+         /* 透明属性，0透明，1不透明 */
+        filter:opacity(0)
+    }
+    to{
+        transform: translateX(0px);
+        filter: opacity(1);
+    }
+}

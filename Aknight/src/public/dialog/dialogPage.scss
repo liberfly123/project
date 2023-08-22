@@ -1,0 +1,96 @@
+/* 登录注册页面的遮罩层样式 */
+.mathcode {
+    background-color: #fff;
+    width: 20rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        padding: 0.5vw 1vw;
+        width: 100%;
+        height: 100%;
+
+        section {
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            input {
+                width: 45%;
+                height: 30%;
+                border: none;
+                background-color: rgba(255, 255, 255, 0);
+                outline: none;
+                border-bottom: 1px solid #989494;
+                padding: 0 0.5vw;
+                margin-right: 0.5vw;
+                margin-top: 17%;
+                font-size: 16px;
+            }
+
+            span {
+                width: 48%;
+                height: 0%;
+
+                svg {
+                    width: 100%;
+                }
+            }
+        }
+
+        button {
+            width: 10rem;
+            height: 3rem;
+            margin: 0 1vw;
+            border: none;
+            font-size: 15px;
+        }
+    }
+}
+
+/* 个人中心登出时的遮罩层样式 */
+.loginout {
+    width: 20rem;
+    height: 15rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        width: 100%;
+        text-align: center;
+
+        section {
+            font-size: 1.3rem;
+            margin-top: 4.5vh;
+
+            button {
+                margin-left: 1vw;
+                width: 40%;
+            }
+        }
+
+        section>button:nth-child(2) {
+            background-color: #fff;
+            border: 1px solid #dfdfdf;
+            color: #565656;
+        }
+
+        section>button:nth-child(2):hover {
+            background-color: #dfdfdf;
+        }
+    }
+}
+
+.dialogMenu {
+    width: 50vw;
+    padding: 2vw;
+    background-color: white;
+    border-radius: 2vw;
+}

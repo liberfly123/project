@@ -1,0 +1,150 @@
+.home-box {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.9fr 3.3fr 3.3fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "center" "footer";
+    row-gap: 1rem;
+
+    /* 头部 */
+    .header {
+        grid-area: header;
+        height: 7.5rem;
+        display: flex;
+        align-items: center;
+
+        /* 四个盒子的样式 */
+        .centbox {
+            height: 100%;
+            width: 20vw;
+            margin-left: 1rem;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .msg {
+                height: 100%;
+                width: 65%;
+
+                section {
+                    height: 40%;
+                    font-size: 0.9rem;
+
+                    span {
+                        display: inline-block;
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+            .msg>section:first-child {
+                font-size: 1.8rem;
+            }
+
+            .cricle {
+                width: 4.5rem;
+                height: 4.5rem;
+                border-radius: 50%;
+                background-color: #ECF5FF;
+            }
+        }
+
+        .centbox:hover {
+            box-shadow: 0 0 10px #e1dddd;
+            transition: all 0.3s ease-in 0.1s;
+        }
+
+        .centbox:nth-child(1) {
+            margin-left: 0;
+        }
+    }
+
+    /* 中间两个echarts图 */
+    .center {
+        display: flex;
+        grid-area: center;
+        height: 25rem;
+
+        div:hover {
+            box-shadow: 0 0 10px #e1dddd;
+            transition: all 0.3s ease-in 0.1s;
+        }
+
+        /* 复合折线图 */
+        #expMedicals {
+            height: 100%;
+            width: 55.5vw;
+            background-color: #fff;
+            margin-right: 1rem;
+        }
+
+        /* 圆环图 */
+        #basicMedical {
+            height: 100%;
+            width: 26.5vw;
+            background-color: #fff;
+        }
+    }
+
+    /* 底部 */
+    .footer {
+        grid-area: footer;
+        height: 25rem;
+        display: flex;
+
+        .tool:hover,
+        #naweiCompany:hover {
+            box-shadow: 0 0 10px #e1dddd;
+            transition: all 0.3s ease-in 0.1s;
+        }
+
+        .tool {
+            height: 100%;
+            width: 26.5vw;
+            background-color: #fff;
+            margin-right: 1rem;
+
+            .tool-box {
+                margin: 1rem;
+
+                .title {
+                    font-size: 15px;
+                    font-weight: bold;
+                    margin-bottom: 1rem;
+                }
+
+                div {
+                    height: 13vh;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-template-rows: repeat(3, 1fr);
+                    gap: 1rem;
+
+                    .tools {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #F5F5FF;
+                        cursor: pointer;
+
+                        section {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .tools:hover {
+                        background-color: #EBF5FF;
+                    }
+                }
+            }
+        }
+        /* 折柱图 */
+        #naweiCompany {
+            height: 100%;
+            width: 55.5vw;
+            background-color: #fff;
+        }
+    }
+}

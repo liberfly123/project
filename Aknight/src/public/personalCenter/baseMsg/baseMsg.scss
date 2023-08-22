@@ -1,0 +1,91 @@
+/* baseMsg外框 */
+.inof {
+  width: 30rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1.3fr 1fr;
+  grid-template-areas:
+    "top"
+    "middle"
+    "bottom";
+  row-gap: 2rem;
+  margin-top: 8.5rem;
+
+  /* 三个盒子 */
+  div:nth-child(1) {
+    grid-area: top;
+  }
+
+  div:nth-child(2) {
+    grid-area: middle;
+  }
+
+  div:nth-child(3) {
+    grid-area: bottom;
+    margin-bottom: 2rem;
+  }
+
+  /* 每个盒子的标题部分*/
+  div>section:nth-child(1) {
+    padding: 0;
+    margin: 0.2vh 0;
+
+    img,
+    span {
+      vertical-align: middle;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    img {
+      width: 24px;
+    }
+  }
+
+  /* 每个盒子的内部布局*/
+  div {
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+
+
+    section {
+      padding: 0 1.5vw;
+      margin-top: 0.5vh;
+
+      input {
+        width: 64%;
+        height: 4vh;
+        border: none;
+        border-bottom: 1px solid #d8d6d6;
+        outline: none;
+        background-color: rgba(255, 255, 255, 0);
+        font-size: 15px;
+        margin-right: 1.5vw;
+        margin-top: 1vh;
+        padding-left: 0.25vw;
+      }
+
+      p {
+        color: #158fc5;
+        font-size: 13px;
+        padding: 0.5vh 0;
+        font-weight: bold;
+      }
+
+      button {
+        margin: 0.7rem 0;
+        width: 30%;
+      }
+
+      span {
+        font-size: 12px;
+        color: #565656;
+      }
+
+    }
+
+  }
+}
